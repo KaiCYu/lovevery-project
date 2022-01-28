@@ -1,3 +1,10 @@
+import playkit0 from './public/static/playkit/playkit0.png';
+import playkit1 from './public/static/playkit/playkit1.png';
+import playkit2 from './public/static/playkit/playkit2.png';
+import playkit3 from './public/static/playkit/playkit3.png';
+import playkit4 from './public/static/playkit/playkit4.png';
+import playkit5 from './public/static/playkit/playkit5.png';
+
 import looker0 from './public/static/looker/looker0.png';
 import looker1 from './public/static/looker/looker1.png';
 import looker2 from './public/static/looker/looker2.png';
@@ -86,9 +93,31 @@ import thinker10 from './public/static/thinker/thinker10.png';
 import thinker11 from './public/static/thinker/thinker11.png';
 
 const data = {
-  data: [
+  kits: [
+    // general subscription info
     {
       "id": 0,
+      "name": "The Play Kits",
+      "age": "",
+      "description": "Spend less time researching and more time connecting with your child. Our experts link brain science and Montessori to the way you play. Support your child’s learning during important developmental windows with play essentials that are tailored to their exact stage. We offer flexible payment options, and you can skip or cancel your subscription at any time.",
+      "benefits": [
+        "Take Out the Guesswork",
+        "Right Toys, Right Time",
+        "Child-Safe & Sustainable",
+        "Parenting Made Easier",
+        "No commitments",
+      ],
+      "images": [
+        playkit0,
+        playkit1,
+        playkit2,
+        playkit3,
+        playkit4,
+        playkit5,
+      ]
+    },
+    {
+      "id": 1,
       "name": "The Looker",
       "age": "Weeks 0-12",
       "description": "Sensitive to light and sound, your newborn is already becoming aware of their new world. This Play Kit helps them build new brain connections with high-contrast images and black and white sensory mittens.",
@@ -113,7 +142,7 @@ const data = {
       ]
     },
     {
-      "id": 1,
+      "id": 2,
       "name": "The Charmer",
       "age": "Months 3-4",
       "description": "Your baby may start to recognize your face—cooing at you, smiling, and delighting everyone they meet. This Play Kit is designed to let your baby explore with their mouth, eyes, and hands as their personality emerges and their social awareness grows.",
@@ -143,7 +172,7 @@ const data = {
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "name": "The Senser",
       "age": "Months 5-6",
       "description": "Your baby may be tasting, mouthing, and feeling everything they can get their hands on right now. This Play Kit helps your baby investigate their world around them, while working on getting themself closer to what looks and sounds exciting to them.",
@@ -170,7 +199,7 @@ const data = {
       ]
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "The Inspector",
       "age": "Months 7-8",
       "description": "Your baby is more aware of everything around them and fascinated with details. This Play Kit makes the most of your baby's natural curiosity about how things work with opportunities to explore texture, practice nesting and stacking, and learn about object permanence.",
@@ -199,7 +228,7 @@ const data = {
       ]
     },
     {
-      "id": 4,
+      "id": 5,
       "name": "The Explorer",
       "age": "Months 9-10",
       "description": "Your baby loves to see the effect they can have on their environment. This Play Kit is designed to experiment with gravity, practice balance, and begin coordinating both sides of their body.",
@@ -226,7 +255,7 @@ const data = {
       ]
     },
     {
-      "id": 5,
+      "id": 6,
       "name": "The Thinker",
       "age": "Months 11-12",
       "description": "Your baby is starting to put it all together and understand concepts at a deeper level. This Play Kit encourages your baby to define and organize information while engaging their budding imagination.",
