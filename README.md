@@ -29,3 +29,4 @@ TODOs:
   - leverage the NextJS setup for Jest. https://nextjs.org/docs/testing#setting-up-jest-with-the-rust-compiler
 - implement the Breadcrumb.js 
 - refactor `Products.js` to pull out the Carousel component from the product details
+
