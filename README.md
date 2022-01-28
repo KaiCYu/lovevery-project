@@ -12,23 +12,20 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Notes and TODOs
+This is the Lovevery front-end takehome project for Kai Yu.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+This is a first pass at my implementation for product pages for the first 6 subscription boxes of Lovevery. The first "product" is an introduction to the Play Kits. When the user enters a birthdate, they are directed to the product page for the Play Kit that is relevant for the child's age.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+My implementation uses React, React Bootstrap (and icons), moment, react-datepicker, and deployed via Vercel.
 
-## Learn More
+The code is structured off of index.js, and the "main" component of `Products.js`, which has a Carosuel along with dummy data for each of the products (imported from data.js).
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+TODOs:
+- extend components to fetch real data from an endpoint
+  - the most straight-foward way to implement this is to leverage the NextJS API routes, by adding a handler function under the `/api/*` directory. Ideally, after the user submits the birthdate information
+- add unit tests for components
+  - leverage the NextJS setup for Jest. https://nextjs.org/docs/testing#setting-up-jest-with-the-rust-compiler
+- implement the Breadcrumb.js 
+- refactor `Products.js` to pull out the Carousel component from the product details
