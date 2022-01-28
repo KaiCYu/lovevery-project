@@ -1,8 +1,10 @@
 export default function Breadcrumb() {
   return (
-    <div>
+    <div className="d-flex mb-2 breadcrumbs">
       {/* TODO: have a working breadcrumb component */}
-      Home > Play Kits 
+      <strong>
+        Home > Play Kits 
+      </strong>
     </div>
   )
 };

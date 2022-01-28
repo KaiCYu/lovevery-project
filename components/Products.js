@@ -20,7 +20,6 @@ export default function Products() {
 
   const product = data.kits[current];
 
-  console.log('product::: ', product);
   const handleSubmit = (e) => {
     e.preventDefault();
     // find how old the baby is in months
@@ -61,7 +60,7 @@ export default function Products() {
         <Col>
           <Carousel 
             className="d-flex"
-            interval={400}
+            interval={2000}
           >
             {
               product.images.map((image, i) => (
@@ -79,13 +78,30 @@ export default function Products() {
 
         <Col>
           <Row className="d-flex mt-2">
-            <h4>
+            <h4 className="p-0">
               {product.name}
             </h4>
           </Row>
-          <Row className="d-flex">
-            {product.age}
-          </Row>
+          {
+            current !== 0 ? (
+              <div className="d-flex flex-row justify-content-between">
+                <div className="border-right">
+                  <i className="bi-star-fill gold"></i>
+                  <i className="bi-star-fill gold"></i>
+                  <i className="bi-star-fill gold"></i>
+                  <i className="bi-star-fill gold"></i>
+                  <i className="bi-star-fill gold"></i>
+                  20 Review
+                </div>
+                <div className="border-right">
+                  {product.age}
+                </div>
+                <div>
+                  Part of: Play Kit Subscription
+                </div>
+              </div>
+            ) : null
+          }
 
           <hr className="w-100" />
 
@@ -109,17 +125,17 @@ export default function Products() {
             </h5>
           </Row>
 
-          <Row className="d-flex">
+          <Row className="d-flex justify-content-between">
             <Form 
               onSubmit={handleSubmit} 
-              className={cn(styles.inputContainer)}
+              className={cn(styles.inputContainer, 'd-flex')}
             >
-              <Form.Group className="mb-3" controlId="childName">
+              <Form.Group className={styles.input} controlId="childName">
                 <Form.Label>Your child's name (optional)</Form.Label>
                 <Form.Control type="input" onChange={setChildName}/>
               </Form.Group>
 
-              <Form.Group className="mb-3" controlId="birthdate">
+              <Form.Group className={styles.input} controlId="birthdate">
                 <Form.Label>Birth date</Form.Label>
                 <DatePicker
                   className="form-control"
@@ -128,10 +144,17 @@ export default function Products() {
                   maxDate={new Date()}
                 />
               </Form.Group>
-              <Button variant="primary" type="submit">
-                Find Play Kits
+              <Button className="loveveryGreen" type="submit">
+                Subscribe now
               </Button>
             </Form>
+          </Row>
+          <Row className="d-flex flex-row mt-2">
+            <ul className={styles.guarantees}>
+              <li>Free shipping</li>
+              <li>Cancel anytime</li>
+              <li>Satisfaction guaranteed</li>
+            </ul>
           </Row>
         </Col>
       </Row>

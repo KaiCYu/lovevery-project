@@ -1,3 +1,16 @@
 .inputContainer {
-  max-height: 50px;
+  margin-top: 10px;
+  align-items: self-end;
+  max-height: 75px;
+}
+
+.input {
+  width: 35%;
+  margin-right: 5px;
+}
+
+.guarantees {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }

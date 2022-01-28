@@ -9,9 +9,11 @@ export default function Header() {
   return (
     <Navbar fixed="top" expand="lg">
       <Container>
-        <Nav className="me-auto">
-          <Nav.Link>Shop</Nav.Link>
-          <Nav.Link>About us</Nav.Link>
+        <Nav className="me-auto w-100 d-flex justify-content-between">
+          <div className="d-flex flex-row">
+            <Nav.Link>Shop</Nav.Link>
+            <Nav.Link>About us</Nav.Link>
+          </div>
           <Image 
             alt=""
             src="/logo-green.svg"
@@ -19,9 +21,11 @@ export default function Header() {
             height="45"
             className="d-inline-block align-top"
           />
-          <Nav.Link>Help</Nav.Link>
-          <Nav.Link>Sign In</Nav.Link>
-          <Nav.Link>Cart</Nav.Link>
+          <div className="d-flex flex-row">
+            <Nav.Link>Help</Nav.Link>
+            <Nav.Link>Sign In</Nav.Link>
+            <Nav.Link>Cart</Nav.Link>
+          </div>
         </Nav >
       </Container>
     </Navbar>

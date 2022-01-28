@@ -14,3 +14,24 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.loveveryGreen {
+  background-color: #4edbc9 !important;
+}
+
+.gold {
+  color: gold;
+}
+
+::marker {
+  color: #4edbc9;
+}
+
+.border-right {
+  border-right: 1px solid lightgray;
+  padding-right: 20px;
+}
+
+.breadcrumbs {
+  margin-left: 80px;
+}

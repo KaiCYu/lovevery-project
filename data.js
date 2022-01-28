@@ -118,8 +118,8 @@ const data = {
     },
     {
       "id": 1,
-      "name": "The Looker",
-      "age": "Weeks 0-12",
+      "name": "The Looker Play Kit",
+      "age": "Suitable for 0-12 week olds",
       "description": "Sensitive to light and sound, your newborn is already becoming aware of their new world. This Play Kit helps them build new brain connections with high-contrast images and black and white sensory mittens.",
       "benefits": [
         "Build new brain connections",
@@ -143,8 +143,8 @@ const data = {
     },
     {
       "id": 2,
-      "name": "The Charmer",
-      "age": "Months 3-4",
+      "name": "The Charmer Play Kit",
+      "age": "Suitable for 3-4 months old",
       "description": "Your baby may start to recognize your face—cooing at you, smiling, and delighting everyone they meet. This Play Kit is designed to let your baby explore with their mouth, eyes, and hands as their personality emerges and their social awareness grows.",
       "benefits": [
         "Develop speech and oral motor strength",
@@ -173,8 +173,8 @@ const data = {
     },
     {
       "id": 3,
-      "name": "The Senser",
-      "age": "Months 5-6",
+      "name": "The Senser Play Kit",
+      "age": "Suitable for 5-6 months old",
       "description": "Your baby may be tasting, mouthing, and feeling everything they can get their hands on right now. This Play Kit helps your baby investigate their world around them, while working on getting themself closer to what looks and sounds exciting to them.",
       "benefits": [
         "Develop language skills",
@@ -200,8 +200,8 @@ const data = {
     },
     {
       "id": 4,
-      "name": "The Inspector",
-      "age": "Months 7-8",
+      "name": "The Inspector Play Kit",
+      "age": "Suitable for 7-8 months old",
       "description": "Your baby is more aware of everything around them and fascinated with details. This Play Kit makes the most of your baby's natural curiosity about how things work with opportunities to explore texture, practice nesting and stacking, and learn about object permanence.",
       "benefits": [
         "Promote speech development",
@@ -229,8 +229,8 @@ const data = {
     },
     {
       "id": 5,
-      "name": "The Explorer",
-      "age": "Months 9-10",
+      "name": "The Explorer Play Kit",
+      "age": "Suitable for 9-10 months old",
       "description": "Your baby loves to see the effect they can have on their environment. This Play Kit is designed to experiment with gravity, practice balance, and begin coordinating both sides of their body.",
       "benefits": [
         "Explore cause and effect",
@@ -256,8 +256,8 @@ const data = {
     },
     {
       "id": 6,
-      "name": "The Thinker",
-      "age": "Months 11-12",
+      "name": "The Thinker Play Kit",
+      "age": "Suitable for 11-12 months old",
       "description": "Your baby is starting to put it all together and understand concepts at a deeper level. This Play Kit encourages your baby to define and organize information while engaging their budding imagination.",
       "benefits": [
         "Develop pincer grasp and hand strength",
