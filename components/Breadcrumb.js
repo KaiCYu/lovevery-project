@@ -3,7 +3,7 @@ export default function Breadcrumb() {
     <div className="d-flex mb-2 breadcrumbs">
       {/* TODO: have a working breadcrumb component */}
       <strong>
-        Home > Play Kits 
+        Home &gt; Play Kits 
       </strong>
     </div>
   )

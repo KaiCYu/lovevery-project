@@ -131,7 +131,7 @@ export default function Products() {
               className={cn(styles.inputContainer, 'd-flex')}
             >
               <Form.Group className={styles.input} controlId="childName">
-                <Form.Label>Your child's name (optional)</Form.Label>
+                <Form.Label>Your child{"'"}s name (optional)</Form.Label>
                 <Form.Control type="input" onChange={setChildName}/>
               </Form.Group>
 
